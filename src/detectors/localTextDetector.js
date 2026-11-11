@@ -139,12 +139,13 @@ class LocalTextDetector extends BaseDetector {
       return this._result(false, 0, "Empty or non-string input");
     }
 
-    const normalised = text.toLowerCase().trim();
+    // Rules see the original text: the patterns ignore case themselves, and the caps rule needs it.
+    const content    = text.trim();
     const firedRules = [];
     let score        = 0;
 
     for (const rule of TEXT_RULES) {
-      if (rule.test(normalised)) {
+      if (rule.test(content)) {
         score += rule.weight;
         firedRules.push(rule.name);
       }
