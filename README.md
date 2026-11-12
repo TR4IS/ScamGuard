@@ -3,9 +3,11 @@
 **A Discord bot that deletes scam messages and scam images the moment they're posted.**
 Runs free with local rules, or sends the hard cases to an AI. [العربية](README.ar.md)
 
-<img src="docs/scamguard.png" width="820" alt="A fake free-Nitro message triggers six rules and scores 61%, above the 60% threshold, so it is deleted and a warning is posted. A normal tournament link scores 10% and is left alone.">
+<img src="docs/demo.gif" width="760" alt="A scam image is posted in a Discord channel; a second later ScamGuard deletes it and posts a warning: 100% match to a known scam image.">
 
 ## How it decides
+
+<img src="docs/scamguard.png" width="820" alt="A fake free-Nitro message triggers six rules and scores 61%, above the 60% threshold, so it is deleted and a warning is posted. A normal tournament link scores 10% and is left alone.">
 
 | | Local mode (default) | AI mode |
 |---|---|---|
